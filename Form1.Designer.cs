@@ -46,6 +46,8 @@
             buttonPlus = new Button();
             buttonEqually = new Button();
             textBox1 = new TextBox();
+            button10 = new Button();
+            button11 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -251,11 +253,35 @@
             textBox1.TextAlign = HorizontalAlignment.Right;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
+            // button10
+            // 
+            button10.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            button10.Location = new Point(575, 106);
+            button10.Name = "button10";
+            button10.Size = new Size(100, 100);
+            button10.TabIndex = 18;
+            button10.Text = "√";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
+            // 
+            // button11
+            // 
+            button11.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            button11.Location = new Point(575, 228);
+            button11.Name = "button11";
+            button11.Size = new Size(100, 100);
+            button11.TabIndex = 19;
+            button11.Text = "()";
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(593, 725);
+            ClientSize = new Size(706, 725);
+            Controls.Add(button11);
+            Controls.Add(button10);
             Controls.Add(textBox1);
             Controls.Add(buttonEqually);
             Controls.Add(buttonPlus);
@@ -300,5 +326,7 @@
         private Button buttonPlus;
         private Button buttonEqually;
         private TextBox textBox1;
+        private Button button10;
+        private Button button11;
     }
 }
